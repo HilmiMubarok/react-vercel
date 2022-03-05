@@ -30,9 +30,9 @@ export default function Navbar() {
         <div>
             <nav className="bg-bg-light border-none px-2 sm:px-4 py-2.5 dark:bg-bg-dark dark:text-font-dark">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
-                    <a href="#" className="flex">
+                    <Link to="/" className="flex">
                         <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-font-dark text-font-light">Hilmi Mubarok</span>
-                    </a>
+                    </Link>
                     <div className="flex md:order-2">
                         <button onClick={toggleDark} type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{text}</button>
                         <button data-collapse-toggle="mobile-menu-4" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false">
