@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { render } from "react-dom";
+import "./index.css";
+import App from "./App";
+import 'flowbite';
 
-ReactDOM.render(
-  <React.StrictMode>
+const rootElement = document.getElementById("root");
+render(
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </BrowserRouter>,
+  rootElement
 );
