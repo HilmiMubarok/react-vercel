@@ -1,14 +1,15 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 
 const Surah = () => {
-    const { id } = useParams();
 
     const [surah, setSurah] = useState([])
 
+    const { id } = useParams();
+    console.log(id);
     useEffect(() => {
         const fetchSurah = async () => {
             const data = await axios.get(`https://api.quran.sutanlab.id/surah/${id}`)
@@ -16,7 +17,7 @@ const Surah = () => {
             setSurah(surah)
         }
         fetchSurah()
-    }, [])
+    }, [id])
 
     return (
         <div className='w-full'>
