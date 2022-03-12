@@ -4,11 +4,15 @@ import { render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import 'flowbite';
+import { Provider } from "react-redux";
+import store from "./app/store";
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>,
   rootElement
 );

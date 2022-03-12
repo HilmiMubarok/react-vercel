@@ -8,6 +8,7 @@ import NoMatch from "./NoMatch";
 import Quran from "./Quran";
 import Surah from "./Quran/Surah";
 import Movies from "./Movies";
+import Counter from "./Counter";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
             <Route path="/quran" element={<Quran />} />
             <Route path="/surah/:id" element={<Surah />} />
             <Route path="/movies" element={<Movies />} />
+            <Route path="/counter" element={<Counter />} />
             <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
